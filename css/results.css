@@ -1,0 +1,246 @@
+/* Results Page — supplemental */
+
+/* ── Hero ── */
+.results-hero {
+  padding-top: 140px;
+  padding-bottom: 80px;
+  background: var(--charcoal);
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+.results-hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+.results-hero-bg img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+.results-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background:
+    linear-gradient(to top, rgba(0,0,0,0.78) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.35) 100%);
+  pointer-events: none;
+}
+.results-hero .eyebrow { color: var(--gold-light); }
+.results-hero h1 em { color: var(--gold-light); }
+.results-hero h1 {
+  color: var(--cream);
+  font-size: clamp(2.6rem, 5.5vw, 5rem);
+  margin-top: 12px;
+  margin-bottom: 18px;
+}
+.results-hero p {
+  color: rgba(250,247,244,0.65);
+  max-width: 520px;
+  margin: 0 auto;
+  font-size: 0.97rem;
+}
+.results-hero-disclaimer {
+  margin-top: 28px;
+  font-family: var(--font-sans);
+  font-size: 0.67rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  color: rgba(250,247,244,0.3);
+}
+
+/* ── Procedure sections ── */
+.procedure-section {
+  padding: 88px 40px;
+  border-bottom: 1px solid var(--border);
+}
+.procedure-section:nth-child(odd) { background: var(--cream); }
+.procedure-section:nth-child(even) { background: var(--parchment); }
+.procedure-section:last-of-type { border-bottom: none; }
+
+.procedure-header {
+  max-width: var(--max);
+  margin: 0 auto 52px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+.procedure-header-text {}
+.procedure-header-text .eyebrow { margin-bottom: 6px; }
+.procedure-header-text h2 { font-size: clamp(1.8rem, 3vw, 2.8rem); margin-bottom: 10px; }
+.procedure-header-text p { font-size: 0.9rem; max-width: 520px; color: var(--text-light); }
+.procedure-count {
+  font-family: 'Noto Serif Display', Georgia, serif;
+  font-size: 4rem;
+  font-weight: 300;
+  font-stretch: extra-condensed;
+  color: var(--gold);
+  opacity: 0.25;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+/* ── Gallery grid (collage images) ── */
+.ba-gallery {
+  max-width: var(--max);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+.ba-gallery.single { grid-template-columns: 1fr; max-width: 860px; }
+.ba-gallery.three { grid-template-columns: repeat(3, 1fr); }
+
+.ba-item {
+  position: relative;
+  overflow: hidden;
+  background: var(--charcoal);
+}
+.ba-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  aspect-ratio: 1 / 1;
+  transition: transform 0.65s var(--ease);
+}
+.ba-item:hover img { transform: scale(1.03); }
+
+/* Label bar on each image */
+.ba-label {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  padding: 20px 20px 16px;
+  background: linear-gradient(to top, rgba(30,24,20,0.82) 0%, transparent 100%);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 12px;
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity 0.35s, transform 0.35s;
+}
+.ba-item:hover .ba-label { opacity: 1; transform: none; }
+.ba-label-text {
+  font-family: var(--font-sans);
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--cream);
+}
+.ba-label-badge {
+  background: var(--gold);
+  color: var(--white);
+  font-family: var(--font-sans);
+  font-size: 0.55rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  white-space: nowrap;
+}
+
+/* ── Single jawline result ── */
+.ba-featured {
+  max-width: var(--max);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 64px;
+  align-items: center;
+}
+.ba-featured-img {
+  position: relative;
+  overflow: hidden;
+}
+.ba-featured-img img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  transition: transform 0.7s var(--ease);
+}
+.ba-featured-img:hover img { transform: scale(1.03); }
+.ba-featured-labels {
+  position: absolute;
+  bottom: 20px; left: 20px; right: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+.ba-fl {
+  flex: 1;
+  text-align: center;
+  padding: 8px 12px;
+  font-family: var(--font-sans);
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+.ba-fl-before { background: rgba(44,37,32,0.72); color: rgba(250,247,244,0.75); }
+.ba-fl-after  { background: var(--gold); color: var(--white); }
+
+.ba-featured-text {}
+.ba-featured-text .eyebrow { margin-bottom: 6px; }
+.ba-featured-text h3 { font-size: clamp(1.5rem, 2.5vw, 2.2rem); margin-bottom: 14px; }
+.ba-featured-text p { font-size: 0.9rem; margin-bottom: 20px; color: var(--text-light); }
+.ba-result-points {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+.ba-result-point {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-family: var(--font-sans);
+  font-size: 0.83rem;
+  color: var(--text);
+}
+.ba-result-point::before {
+  content: '';
+  width: 18px; height: 1px;
+  background: var(--gold);
+  margin-top: 10px;
+  flex-shrink: 0;
+}
+
+/* ── Disclaimer strip ── */
+.results-disclaimer {
+  background: var(--parchment);
+  border-top: 1px solid var(--border);
+  padding: 24px 40px;
+  text-align: center;
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  color: var(--text-light);
+  letter-spacing: 0.02em;
+  line-height: 1.7;
+}
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .procedure-section { padding: 64px 24px; }
+  .ba-gallery { grid-template-columns: 1fr 1fr; }
+  .ba-gallery.three { grid-template-columns: 1fr 1fr; }
+  .ba-featured { grid-template-columns: 1fr; gap: 36px; }
+  .procedure-header { flex-direction: column; align-items: flex-start; }
+  .procedure-count { display: none; }
+  .results-disclaimer { padding: 20px 24px; }
+}
+@media (max-width: 600px) {
+  .results-hero { padding-top: 110px; padding-bottom: 56px; }
+  .ba-gallery { grid-template-columns: 1fr; }
+  .ba-gallery.three { grid-template-columns: 1fr; }
+  .ba-label { opacity: 1; transform: none; }
+}

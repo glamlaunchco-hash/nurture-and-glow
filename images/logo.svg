@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 200" fill="none" role="img" aria-label="Nurture and Glow logo">
+  <!-- Lotus Flower -->
+  <!-- Center petal (tallest) -->
+  <path d="M220 20 C208 50 204 80 220 110 C236 80 232 50 220 20Z" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linejoin="round"/>
+  <!-- Inner left petal -->
+  <path d="M220 110 C200 90 186 68 192 44 C204 66 210 88 220 110Z" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linejoin="round"/>
+  <!-- Inner right petal -->
+  <path d="M220 110 C240 90 254 68 248 44 C236 66 230 88 220 110Z" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linejoin="round"/>
+  <!-- Middle left petal -->
+  <path d="M220 110 C195 100 170 80 164 54 C183 72 200 92 220 110Z" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linejoin="round"/>
+  <!-- Middle right petal -->
+  <path d="M220 110 C245 100 270 80 276 54 C257 72 240 92 220 110Z" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linejoin="round"/>
+  <!-- Outer left petal -->
+  <path d="M220 110 C188 108 154 94 142 68 C165 80 190 96 220 110Z" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linejoin="round"/>
+  <!-- Outer right petal -->
+  <path d="M220 110 C252 108 286 94 298 68 C275 80 250 96 220 110Z" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linejoin="round"/>
+  <!-- Far left petal -->
+  <path d="M220 112 C180 116 138 110 118 84 C148 90 182 104 220 112Z" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linejoin="round"/>
+  <!-- Far right petal -->
+  <path d="M220 112 C260 116 302 110 322 84 C292 90 258 104 220 112Z" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linejoin="round"/>
+  <!-- Base line -->
+  <path d="M148 114 Q220 120 292 114" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+  <!-- Text: "nurture and glow" -->
+  <!-- "nurture" -->
+  <text x="66" y="172" font-family="'Noto Serif Display', 'Cormorant Garamond', Georgia, serif" font-size="52" font-weight="400" fill="currentColor" letter-spacing="-0.5">nurture</text>
+  <!-- "and" italic -->
+  <text x="260" y="172" font-family="'Noto Serif Display', 'Cormorant Garamond', Georgia, serif" font-size="52" font-weight="400" font-style="italic" fill="currentColor">and</text>
+  <!-- "glow" -->
+  <text x="334" y="172" font-family="'Noto Serif Display', 'Cormorant Garamond', Georgia, serif" font-size="52" font-weight="400" fill="currentColor" letter-spacing="-0.5"> glow</text>
+</svg>
